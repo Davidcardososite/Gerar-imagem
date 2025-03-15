@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gerar Imagem</title>
+</head>
+<body>
+    <h1>Gerar Imagem a partir de Texto</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <label for="text">Texto para imagem:</label>
+        {{ form.text(size=50) }}
+        <button type="submit">Gerar imagem</button>
+    </form>
+</body>
+</html>
